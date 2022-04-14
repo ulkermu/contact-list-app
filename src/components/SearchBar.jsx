@@ -16,12 +16,12 @@ function SearchBar({ contact }) {
   console.log(filteredContact, "filteredContact");
 
   return (
-    <div>
-      <input placeholder="Search Contact" onChange={searchHandler} />
+    <div className="search">
+      <input className="search-input" placeholder="Search Contact" onChange={searchHandler} />
 
-      <ul>
+      <ul className="search-list">
         {filteredContact.map((contact, key) => (
-          <li key={key}>{`${contact.fullname} ${contact.phone}`}</li>
+          <li className="search-items" key={key}>{`${contact.fullname} ${contact.phone}`}</li>
         ))}
       </ul>
     </div>

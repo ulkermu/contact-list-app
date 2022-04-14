@@ -20,9 +20,10 @@ function Form({ contact, setContact }) {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className="form">
       <input
         onChange={inputHandler}
+        className="form-input"
         value={form.fullname}
         name="fullname"
         type="text"

@@ -23,10 +23,10 @@ function ContactList() {
   ]);
 
   return (
-    <div>
+    <>
       <SearchBar contact={contact} />
       <Form contact={contact} setContact={setContact} />
-    </div>
+    </>
   );
 }
 
