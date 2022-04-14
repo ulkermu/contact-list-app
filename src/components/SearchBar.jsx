@@ -21,7 +21,7 @@ function SearchBar({ contact }) {
 
       <ul className="search-list">
         {filteredContact.map((contact, key) => (
-          <li className="search-items" key={key}>{`${contact.fullname} ${contact.phone}`}</li>
+          <li className="search-items" key={key}>{`${contact.fullname} - ${contact.phone}`}</li>
         ))}
       </ul>
     </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Form({ contact, setContact }) {
+function Contact({ contact, setContact }) {
   const initialValue = { fullname: "", phone: "" }
   const [form, setForm] = useState(initialValue);
 
@@ -31,14 +31,15 @@ function Form({ contact, setContact }) {
       />
       <input
         onChange={inputHandler}
+        className="form-input"
         value={form.phone}
         name="phone"
         type="text"
         placeholder="Phone Number"
       />
-      <button>Add New Contact</button>
+      <button className="form-button">Add New Contact</button>
     </form>
   );
 }
 
-export default Form;
+export default Contact;

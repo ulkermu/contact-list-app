@@ -4,15 +4,21 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
-  background-image: url(./images/background.png);
-  background-repeat: no-repeat;
+  
 }
 
 code {
@@ -22,6 +28,14 @@ code {
 
 h1 {
   text-align: center;
+  margin-top: 8vh;
+}
+
+/** Contact List */
+
+.contact-list {
+  width: 50%;
+  margin: 20px;
 }
 
 /** Search Bar */
@@ -31,13 +45,40 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 5vh;
 }
 
 .search-input {
   text-align: center;
+  padding: 10px;
+  width: 30%;
+  border-radius: 9999px;
+  outline: none;
+  margin-bottom: 2vh;
 }
 
 .search-items {
   list-style-type: none;
-  padding: 0 10px;
+  padding: 10px;
+}
+
+/** Form */
+
+.form {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.form-input {
+  padding: 10px;
+  text-align: center;
+  border-radius: 9999px;
+  width: 20%;
+  margin: auto;
+}
+
+.form-button {
+  padding: 10px;
+  border-radius: 9999px;
+  margin: 20px;
 }

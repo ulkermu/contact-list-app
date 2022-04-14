@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Form from "./Form";
+import Contact from "./Contact";
 import SearchBar from "./SearchBar";
 
 function ContactList() {
   const [contact, setContact] = useState([
     {
-      fullname: "Murat Ülker",
+      fullname: "Mehmet Güven",
       phone: "222111333",
     },
     {
@@ -17,21 +17,18 @@ function ContactList() {
       phone: "222555333",
     },
     {
-      fullname: "Selami İvedilikle",
+      fullname: "Muaz Erkam Özdemir",
       phone: "248521333",
     },
   ]);
 
   return (
     <>
+      <h1>Contact List App</h1>
       <SearchBar contact={contact} />
-      <Form contact={contact} setContact={setContact} />
+      <Contact contact={contact} setContact={setContact} />
     </>
   );
 }
 
 export default ContactList;
-
-/*
-
-*/
