@@ -5,8 +5,8 @@ import Contact from "./Contact";
 function ContactList() {
   const [contact, setContact] = useState([
     {
-      fullname: "Mehmet Güven",
-      phone: "222111333",
+      fullname: "Güneş Ülker",
+      phone: "584111233",
     },
     {
       fullname: "Yağmur Yavuz",
@@ -15,6 +15,10 @@ function ContactList() {
     {
       fullname: "Öztürk Gökkaya",
       phone: "222555333",
+    },
+    {
+      fullname: "Mehmet Güven",
+      phone: "222111333",
     },
     {
       fullname: "Muaz Erkam Özdemir",

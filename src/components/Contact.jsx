@@ -22,8 +22,8 @@ function Contact({ contact }) {
       <ul className="search-list">
         {filteredContact.map((contact, key) => (
           <li className="search-items" key={key}>
-            <div className="search-name">{`${contact.fullname}`}</div>
-            <div className="search-phone">{`${contact.phone}`}</div>
+            <div>{`${contact.fullname}`}</div>
+            <div>{`${contact.phone}`}</div>
           </li>
         ))}
       </ul>
