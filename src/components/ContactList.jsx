@@ -25,7 +25,7 @@ function ContactList() {
       phone: "248521333",
     },
     {
-      fullname: "Arif Can Ercam",
+      fullname: "Arif Can Ercan",
       phone: "248531586",
     },
   ]);
